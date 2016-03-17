@@ -1,0 +1,7 @@
+{{outlet}}
+{{#modal-dialog close="closeNewTweet" tansluscentOverlay=true}}
+  <form {{action "createNewTweet" on="submit"}}>
+    {{input type="text" value=newMessage placeholder="What's on your mind?"}}
+    <button type="submit">Tweeeeet!</button>
+  </form>
+{{/modal-dialog}}

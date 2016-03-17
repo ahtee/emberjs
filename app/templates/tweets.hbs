@@ -1,6 +1,8 @@
 {{outlet}}
 <ul>
-{{#each tweets as |tweet|}}
+{{#each model as |tweet|}}
   <li>{{tweet.message}}</li>
 {{/each}}
 </ul>
+
+{{link-to 'add another tweet' 'tweets.new'}}

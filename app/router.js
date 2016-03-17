@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('Tweets');
+  this.route('tweets', function() {
+    this.route('new');
+  });
 });
 
 export default Router;
