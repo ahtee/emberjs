@@ -1,2 +1,22 @@
 @import "ember-modal-dialog/ember-modal-structure";
 @import "ember-modal-dialog/ember-modal-appearance";
+
+.tweet-container {
+  border: 1px solid black;
+  padding: 5px;
+  width: 600px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.tweet-message {
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.tweet-message:hover {
+  background-color: #DDD;
+  cursor: pointer;
+}

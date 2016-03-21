@@ -1,8 +1,11 @@
 {{outlet}}
-<ul>
+<div class="tweet-container">
 {{#each model as |tweet|}}
-  <li>{{tweet.message}}</li>
+  <div class="tweet-message">
+    {{tweet.message}}
+    {{tweet.timestamp}}
+  </div>
 {{/each}}
-</ul>
+</div>
 
 {{link-to 'add another tweet' 'tweets.new'}}
